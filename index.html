@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kincses Kamra</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <span> <img src="./img/Logo3_nav.png" alt="kincsesKamraLogo" /></span>
+      <span id="js-menuButton" class="menuButton"
+        ><i class="fa-solid fa-bars"></i
+      ></span>
+    </nav>
+    <header>
+      <section class="banner">
+        <h1>Kincses Kamra</h1>
+        <p>Valami szloge, vagy idézet helye! :)</p>
+      </section>
+    </header>
+    <main>
+      <section id="theGame">
+        <h2>A Játékról</h2>
+        <p>
+          A Kincseskamra a Dungeons & Dragons nevű szerepjáték egy változata,
+          vagy ha így jobban tetszik: a klónja. A játék szabályrendszerének nagy
+          része a harmadik és az ötödik kiadásból származik.
+        </p>
+        <p>
+          Felmenőivel ellentétben a Kincseskamra egy kiadótól független, házi
+          fejlesztésű szabályrendszer, amit folyamatosan próbálunk javítani.
+        </p>
+        <p>
+          Habár a szabályok sok helyen egyedi megnevezéseket használnak, ami egy
+          bizonyos világhoz, Dérához köti a játékot, az alapok bármilyen
+          elképzelt világra átültethetőek.
+        </p>
+        <h3>Főbb eltérések az eredeti rendszerekhez képest:</h3>
+        <ul>
+          <li>
+            Az induló karakterek hat tulajdonsága 1 és 7 között lehet. A
+            tulajdonságok nem használnak módosítókat, csak a tulajdonság
+            értékeket.
+          </li>
+          <li>
+            A kalandozók életpontjai nem változnak a szintlépésekkel, az
+            állóképesség értékükből származó ún. életpont szorzó növeli vagy
+            csökkenti a fajból származó alap életpontot.
+          </li>
+          <li>A varázslatokat manapontokból lehet létrehozni.</li>
+          <li>
+            A mentődobások eltűntek. Helyettük már csak a tulajdonság próbák
+            vannak.
+          </li>
+          <li>
+            A karaktereknek az életpontjaikon túl a bátorságukat is meg kell
+            őrizniük a játék során, ha sokáig akarnak kalandozni.
+          </li>
+          <li>A szabályok metrikus rendszerre lettek átültetve.</li>
+        </ul>
+        <h3>Déria Világa</h3>
+        <p>
+          ... egy kitalált világ. A földön túli hely, amely a számtalan világnak
+          az egyik bolygója. A mágikus háló vastag és erős szálakkal fonja
+          körbe, melyet az istenek és a halandók is egyaránt megcsapolhatnak.
+          Ennek az erőnek a segítségével lehetséges a világok közötti utazás. A
+          történelem előtti időkben az elfek uralkodtak Déra valamennyi
+          civilizált régiójában, de egy óriási hullócsillag, A „Világpusztító”
+          majdnem teljesen megsemmisítette őket. Néhány birodalomnak sikerült
+          nagy erejű kapukat nyitni a távoli jövőbe, hogy az emberek korában
+          élhessenek tovább. Három millió évvel később egy olyan világba
+          érkeztek, ahol teljesen új fajok népesítették be a világukat.
+        </p>
+        <div class="theGameImg">
+            <img src="./img/test3.jpg" alt="egykep" />
+        </div>
+        
+        <p>
+          A dérai istenek létezése a halandóktól függ. Egyikőjük sem mindenható.
+          A létezésüket komoly szabályok kötik: nem halhatatlanok, nem tudnak
+          utazni az időben, nem tudnak manifesztálódni, és nem képesek jelen
+          lenni a világ minden pontján egyszerre. A létük egyféle koncentrált
+          tudat, ami képes nagyon gyorsan a mágikus háló szálain vándorolni.
+          Minden generációban születnek különleges képességekkel megáldott
+          személyek. Némelyek az egyszerű nép tagjai közül kerülnek ki, és
+          kínkeserves munkával küzdi fel magát a csúcsra. Mások a nemesi
+          előjogaikat és tehetségüket kihasználva emelkednek a legendák közé. Ők
+          Déra hősei, akikről a történetek szólnak.
+        </p>
+      </section>
+      <section id="update">
+        <h2>Hírek és Frissitések</h2>
+        <!--<section class="container">
+            <div class="wrapper">
+              <button class="toggle">
+               <span>#1</span>
+               <img
+                  src="https://www.countryflags.com/wp-content/uploads/flag-jpg-xl-13-2048x1229.jpg"
+                  alt="flag"
+                /> 
+                <div>Frissités címe</div>
+                <div>(2022.03.18)</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#2</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#3</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#4</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#5</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#6</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#7</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#8</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#9</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#10</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#11</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#12</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#13</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#14</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#15</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#16</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#17</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#18</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#19</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#20</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#21</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+    
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#22</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+            <div class="wrapper">
+              <button class="toggle">
+                <span>#23</span>
+                <img src="#" alt="flag" />
+                <div>Bahrain Nagydíj</div>
+                <div>2022.03.18 - 20.</div>
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="content">
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+                <p>Itt lesz majd a tartalom!</p>
+              </div>
+            </div>
+          </section>-->
+      <section id="dow">
+        <h2>Letöltés</h2>
+      </section>
+      <section id="contant ">
+        <h2>Kapcsolat</h2>
+      </section>
+    </main>
+    <footer>
+        Lábléc
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
