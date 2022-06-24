@@ -1,8 +1,13 @@
+/*CSS riset*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
+
+/*-------------------------------GeneralStyle ------------------------------*/
 
 body {
   background-color: #fcfaee;
@@ -10,6 +15,21 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: "Imperial";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: "Decorative";
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 @font-face {
@@ -22,53 +42,244 @@ html {
   src: url(../fonts/Kincseskamra\ -\ Birodalmi.otf);
 }
 
+/*-----------------------------------------------------------------Nav----------------------------------------------*/
+
+nav {
+  /* background-color: black; */
+  color: ghostwhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+nav img {
+  width: 100px;
+  height: auto;
+}
+
+.menuButton {
+  background-color: rgba(128, 128, 128, 0.418);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----------------------------------------------------------------Header----------------------------------------------*/
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/kezdőkép.jpg);
+  color: rgba(245, 245, 245, 0.836);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner h1 {
+  font-family: "Imperial";
+  text-shadow: 1px 1px black;
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+.banner p {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 1px 1px black;
+  font-family: "Decorative";
+  text-align: center;
+}
+
+body {
+  background-color: blueviolet;
+}
+
+/*-----------------------------------------------------------------Main----------------------------------------------*/
+
+#theGame p {
+  font-family: "Roboto Flex", sans-serif;
+  margin: 1rem 0.5rem 0 0.5rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  /*   background-color: aqua; */
+}
+
+#theGame ul {
+  font-family: "Roboto Flex", sans-serif;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+#theGame ul li {
+  padding: 0.5rem;
+  line-height: 2rem;
+}
+.theGameImg {
+  text-align: center;
+}
+
+#theGame img {
+  width: 22rem;
+  height: auto;
+  margin: 1rem auto 1rem auto;
+}
+
+/*-----------------------------------UpdateList------------------------*/
+
+.container {
+  width: 60%;
+  margin: 2rem auto 0 auto;
+}
+
+.toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  font-family: "Staatliches", cursive;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  background-color: white;
+  padding: 1px 0;
+  cursor: pointer;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 5px rgba(0, 0, 50, 0.2);
+  padding: 15px 40px;
+  font-family: "Staatliches", cursive;
+}
+
+.content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+/* .toggle img {
+    width: 4rem;
+    height: auto;
+    box-shadow: 1px 1px 1px black;
+  } */
+
+.textContainer {
+  width: 100%;
+}
+.updateTitle {
+  margin-bottom: 0.5rem;
+  font-family: "Decorative";
+  font-size: 1.5rem;
+}
+
+/*-----------------------------------dowSection------------------------*/
+
+#dow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kkBook {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 2rem 0 2rem 0;
+}
+/*-----------------------------------Contact------------------------*/
+
+
+.messageSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/papirus_hatter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20rem;
+  height: 25rem;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.messageSection form {
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.input-style{
+  margin: 1rem 0 1rem 0;
+  width: 13rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.801);
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  font-family: "Roboto Flex", sans-serif;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.massage-style{
+  margin: 1rem 0 1rem 0;
+  width: 18rem;
+  height: 8rem;
+  background-color: rgba(255, 255, 255, 0.801);
+  border: none;
+  border-radius: 15px;
+  font-family: "Roboto Flex", sans-serif;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.submitButton{
+  width: 6rem;
+  height: auto;
+  padding: .5rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: none;
+}
+
+/*-----------------------------------Footer------------------------*/
+footer{
+background-color: black;
+}
+
+/*---------------------------------------------------------------------------@Media---------------------------------------------------------------------------*/
+
 /*-----------------------------------Desktop------------------------*/
 
 @media only screen and (min-width: 1600px) {
   body {
     background-color: gold;
   }
-  /*lista*/
-  /*.container {
-    width: 60%;
-    margin: 10rem auto 0 auto;
-  }
-
-  /*.toggle {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: none;
-    font-family: "Staatliches", cursive;
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
-    background-color: white;
-    padding: 15px 0;
-    cursor: pointer;
-  }
-
-  .wrapper {
-    background-color: white;
-    margin-bottom: 40px;
-    box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
-    padding: 15px 40px;
-    font-family: "Staatliches", cursive;
-  }
-
-  .content {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    transition: all 1s;
-  }
-
-  .toggle img {
-    width: 4rem;
-    height: auto;
-    box-shadow: 1px 1px 1px black;
-  }*/
-} 
+}
 
 /*-----------------------------------Laptop------------------------*/
 
@@ -82,119 +293,33 @@ html {
 
 @media only screen and (max-width: 1024px) {
   body {
-    background-color: yellow;
+  background-color: #FCFAEE;
   }
 }
 
 /*-----------------------------------Mobile------------------------*/
 
 @media only screen and (max-width: 480px) {
-  /*NAV*/
-  nav {
-    /* background-color: black; */
-    color: ghostwhite;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2;
+  h2 {
+    font-size: 2.5rem;
   }
 
-  nav img {
-    width: 100px;
-    height: auto;
-  }
-
-  .menuButton {
-    background-color: rgba(128, 128, 128, 0.418);
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /*Haeder*/
-  .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../img/kezdőkép.jpg);
-    color: rgba(245, 245, 245, 0.836);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .banner h1 {
-    font-family: "Imperial";
-    text-shadow: 1px 1px black;
-    font-weight: 300;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 2.5rem;
-  }
-
-  .banner p {
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
-    text-shadow: 1px 1px black;
-    font-family: "Decorative";
-    text-align: center;
-  }
-
-  body {
-    background-color: blueviolet;
-  }
-
-  /*Main*/
-  #theGame h2 {
-    font-family: "Decorative";
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-
-  #theGame p {
-    font-family: "Roboto Flex", sans-serif;
-    margin: 1rem 0.5rem 0 0.5rem;
-    font-size: 1.1rem;
-    line-height: 2rem;
-    /*   background-color: aqua; */
-  }
-
-  #theGame h3 {
-    font-family: "Decorative";
-    text-align: center;
-    margin-top: 1rem;
+  h3 {
     font-size: 1.5rem;
   }
-  #theGame ul {
-    font-family: "Roboto Flex", sans-serif;
-    padding: 0.5rem;
-    list-style: none;
+
+  .container {
+    width: 95%;
+    margin: 2rem auto 0 auto;
+  }
+  .fa-plus {
+    font-size: 1.5rem;
+  }
+  .wrapper {
+    padding: 8px;
   }
 
-  #theGame ul li {
-    padding: 0.5rem;
-    line-height: 2rem;
-  }
-  .theGameImg {
-    text-align: center;
-  }
-
-  #theGame img {
-    width: 22rem;
-    height: auto;
-    margin: 1rem auto 1rem auto;
+  .kkBook {
+    width: 18rem;
   }
 }
