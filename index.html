@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/book.css"/>
     <link rel="stylesheet" href="./css/style.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -23,6 +25,14 @@
   <body>
     <nav id="navbar">
       <span> <img src="./img/Logo3_nav.png" alt="kincsesKamraLogo" /></span>
+      <span class="navText">
+        <ul>
+          <li> <a href="#theGame">A játékról</a></li>
+          <li> <a href="#update">Hírek</a></li>
+          <li> <a href="#dow">Letöltés</a></li>
+          <li> <a href="#contact">Kapcsolat</a></li>
+        </ul>
+      </span>
       <span id="js-menuButton" class="menuButton"
         ><i class="fa-solid fa-bars"></i
       ></span>
@@ -74,8 +84,8 @@
           </li>
           <li>A szabályok metrikus rendszerre lettek átültetve.</li>
         </ul>
-        <h3>Déria Világa</h3>
-        <p>
+        <h2>Déria Világa</h2>
+        <p class="Wtext">
           ... egy kitalált világ. A földön túli hely, amely a számtalan világnak
           az egyik bolygója. A mágikus háló vastag és erős szálakkal fonja
           körbe, melyet az istenek és a halandók is egyaránt megcsapolhatnak.
@@ -91,7 +101,7 @@
             <img src="./img/test3.jpg" alt="egykep" />
         </div>
         
-        <p>
+        <p class="Wtext">
           A dérai istenek létezése a halandóktól függ. Egyikőjük sem mindenható.
           A létezésüket komoly szabályok kötik: nem halhatatlanok, nem tudnak
           utazni az időben, nem tudnak manifesztálódni, és nem képesek jelen
@@ -171,18 +181,23 @@
         <h2>Letöltés</h2>
         <h3>Ingyenes Szabálykönyv</h3>
           <img class="kkBook" src="./img/cover.jpg" alt="könyv">
-          <span>Letöltés</span>
+          <section class="bookBox"> 
+            <div class="book">
+            <img src="./img/3dBook/cover.jpg" alt="3dbook" />
+            </div>
+          </section>
+          <button class="ButtonStyle">Letöltés</button>
         </div>
       </section>
 
-      <section id="contact ">
+      <section id="contact">
         <h2>Kapcsolat</h2>
         <div class="messageSection">
           <form action="" method="post">
-            <input class="input-style" type="text" id="fname" name="fname" placeholder="Név"><br>
+            <input class="input-style" type="text" id="fname" name="fname" placeholder="Név">
             <input class="input-style" type="email" id="e-mail" name="e-mail" placeholder="E-mail">
             <input class="massage-style" type="text" name="message" id="message">
-            <input class="submitButton" type="submit" value="Küldés">
+            <input class="submitButton submit ButtonStyle" type="submit" value="Küldés">
           </form>
         </div>
       </section>

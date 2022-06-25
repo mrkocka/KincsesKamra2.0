@@ -1,0 +1,56 @@
+.bookBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin: 2rem 0 2rem 0;
+  }
+  .bookBox .book {
+    position: relative;
+    width: 383px;
+    height: 567px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+  }
+  
+  .bookBox .book:hover {
+    transform: rotateY(35deg);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bookBox .book:active {
+    transform: rotateY(180deg);
+  }
+  
+  .bookBox .book::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../img/3dBook/side.jpg);
+    background-position: center;
+    transform: rotateY(90deg);
+  }
+  .bookBox .book::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../img/3dBook/back.jpg);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(60px);
+  }
+  
+  .bookBox .book img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

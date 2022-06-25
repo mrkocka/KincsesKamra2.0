@@ -22,7 +22,9 @@ h2 {
   font-weight: 400;
   text-align: center;
   margin-top: 4rem;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+
 }
 
 h3 {
@@ -32,6 +34,40 @@ h3 {
   font-size: 1.5rem;
 }
 
+.ButtonStyle{
+  background: url(../img/gold.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10rem;
+  height: 3.5rem;
+  font-size: 2.2rem;
+  color: ;
+  font-family: "Imperial";
+  border: none;
+  border-radius: 18px;
+}
+
+.ButtonStyle:hover{
+  cursor: pointer;
+  outline: 2px solid black;
+}
+
+.menuButton{
+  display: none;
+}
+
+nav ul {
+  margin-right: 4rem;
+  gap: 4rem;
+}
+
+/*A végén kitörölni*/
+
+.proba{
+  background-color: rgba(0, 255, 255, 0.356);
+}
+
+/*-------------------------------*/
 @font-face {
   font-family: "Decorative";
   src: url(../fonts/Kincseskamra\ -\ Díszes.otf);
@@ -58,20 +94,34 @@ nav {
 }
 
 nav img {
-  width: 100px;
+  width: 160px;
   height: auto;
 }
 
-.menuButton {
-  background-color: rgba(128, 128, 128, 0.418);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  font-size: 1.5rem;
+
+
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 3rem;
+  margin-right: 2rem;
 }
+nav ul li a{
+  font-size: 2.2rem ;
+  font-family: "Decorative";
+} 
+nav ul li a:hover{
+  color: rgba(248, 248, 255, 0.541);
+  cursor: pointer;
+} 
+
+.navText{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
 
 /*-----------------------------------------------------------------Header----------------------------------------------*/
 
@@ -83,7 +133,7 @@ nav img {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 18rem;
+  height: 62rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,55 +143,92 @@ nav img {
   font-family: "Imperial";
   text-shadow: 1px 1px black;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 9rem;
+  letter-spacing: 1rem;
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 2.5rem;
 }
 
 .banner p {
-  font-size: 1rem;
+  font-size: 3rem;
   letter-spacing: 0.2rem;
   text-shadow: 1px 1px black;
   font-family: "Decorative";
   text-align: center;
 }
 
+.banner div{
+  background-color: burlywood;
+  height: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 
 /*-----------------------------------------------------------------Main----------------------------------------------*/
+
+#theGame{
+  padding: 5rem 8rem 0 8rem;
+
+}
+
+#theGame h2{
+  margin-bottom: 4rem;
+}
 
 #theGame p {
   font-family: "Roboto Flex", sans-serif;
   margin: 1rem 0.5rem 0 0.5rem;
-  font-size: 1.1rem;
-  line-height: 2rem;
+  font-size: 1.6rem;
+  /* line-height: 2rem; */
+  text-align: justify;
   /*   background-color: aqua; */
+}
+#theGame h3{
+  margin: 4rem 0 2rem 0;
+  font-size: 1.6rem;
 }
 
 #theGame ul {
   font-family: "Roboto Flex", sans-serif;
-  padding: 0.5rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
   list-style: none;
 }
 
 #theGame ul li {
   padding: 0.5rem;
   line-height: 2rem;
+  font-size: 1.4rem;
 }
 .theGameImg {
   text-align: center;
 }
 
+.Wtext{
+  padding: 0 8rem 1rem 8rem;
+  line-height: 3rem;
+}
+
+
 #theGame img {
-  width: 22rem;
+  width: 100%;
+  max-width: 52rem;
   height: auto;
   margin: 1rem auto 1rem auto;
 }
 
 /*-----------------------------------UpdateList------------------------*/
 
+#update{
+  padding-top: 5rem;
+}
+#update h2{
+  margin-bottom: 6rem;
+}
+
 .container {
-  width: 60%;
+  width: 80%;
   margin: 2rem auto 0 auto;
 }
 
@@ -183,9 +270,14 @@ nav img {
 .updateTitle {
   margin-bottom: 0.5rem;
   font-family: "Decorative";
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
+.updatedate{
 
+}
+.fa-plus {
+  font-size: 1.4rem;
+}
 /*-----------------------------------dowSection------------------------*/
 
 #dow {
@@ -193,69 +285,69 @@ nav img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
+}
+#dow h2 {
+  margin-bottom: 0rem;
 }
 
 .kkBook {
   width: 100%;
   max-width: 400px;
   height: auto;
-  margin: 2rem 0 2rem 0;
+  display: none;
 }
 /*-----------------------------------Contact------------------------*/
+
+#contact{
+  padding-top: 5rem;
+}
+#contact h2{
+ margin-bottom: 2rem;
+}
 
 .messageSection {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../img/papirus_hatter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 20rem;
-  height: 25rem;
+  width: 50rem;
+  height:auto;
+  padding: 4rem;
   margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.messageSection form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
-
-.messageSection form {
-  flex-direction: column;
-  align-items: center;
-}
-
 .input-style {
   margin: 1rem 0 1rem 0;
-  width: 13rem;
-  height: 2rem;
-  background-color: rgba(255, 255, 255, 0.801);
-  border: none;
+  width: 22rem;
+  height: 3rem;
   padding: 1rem;
-  border-radius: 15px;
-  font-family: "Roboto Flex", sans-serif;
-  color: black;
   font-size: 1.2rem;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(248, 248, 255, 0.897);
 }
 
 .massage-style {
-  margin: 1rem 0 1rem 0;
-  width: 18rem;
-  height: 8rem;
-  background-color: rgba(255, 255, 255, 0.801);
-  border: none;
-  border-radius: 15px;
-  font-family: "Roboto Flex", sans-serif;
-  color: black;
+  margin: 1rem 0 4rem 0;
+  width: 30rem;
+  height: 15rem;
   font-size: 1.2rem;
+  text-align: start;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(248, 248, 255, 0.897);
 }
 
-.submitButton {
-  width: 6rem;
-  height: auto;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  border-radius: 20px;
-  border: none;
-}
 
 /*-----------------------------------Footer------------------------*/
 footer {
@@ -348,38 +440,217 @@ footer div {
 /*-----------------------------------Desktop------------------------*/
 
 @media only screen and (min-width: 1600px) {
-  body {
-    /* background-color: #fcfaee; */
-  }
+ 
+/*-----------------------Nav----------------*/
+/*-----------------------Header----------------*/
+
+ /*-----------------------Main----------------*/
+  /*------------------------UpdateList---------*/
+/*-----------------------dowSection--------------*/
+
+/*---------------------Contact------------------------*/
+
+/*---------------------Footer------------------------*/
+  
 }
 
 /*-----------------------------------Laptop------------------------*/
 
 @media only screen and (max-width: 1600px) {
-  body {
-  /*   background-color: violet; */
+
+  .menuButton{
+    display: none;
   }
+  /*-----------------------Nav----------------*/
+/*-----------------------Header----------------*/
+
+ /*-----------------------Main----------------*/
+  /*------------------------UpdateList---------*/
+/*-----------------------dowSection--------------*/
+
+/*---------------------Contact------------------------*/
+
+/*---------------------Footer------------------------*/
+
+
 }
 
 /*-----------------------------------Tablet Landscape------------------------*/
 
 @media only screen and (max-width: 1024px) {
-  body {
-    /* background-color: brown; */
+ 
+ /*-----------------------Nav----------------*/
+  nav ul {
+    display: none;
   }
+  .menuButton {
+    background-color: rgba(128, 128, 128, 0.418);
+    width: 4rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-bars{
+    font-size: 1.2rem;
+  }
+  nav img {
+    width: 100px;
+  }
+
+/*-----------------------Header----------------*/
+
+
+.banner h1 {
+  font-size: 5rem;
+  letter-spacing: .1rem;
 }
 
-/*-----------------------------------Mobile------------------------*/
+.banner p {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+
+ /*-----------------------Main----------------*/
+ #theGame{
+  padding: 5rem 1rem 0 1rem;
+  text-align: start;
+
+}
+.Wtext{
+  padding: 0 0 1rem 0;
+  text-align: start;
+
+}
+  /*------------------------UpdateList---------*/
+/*-----------------------dowSection--------------*/
+
+/*---------------------Contact------------------------*/
+
+/*---------------------Footer------------------------*/
+.footerFirstBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandBox{
+  width: 100%;
+}
+
+.GeneralInformation {
+  width: 100%;
+}
+
+.GeneralInformation ul {
+  width: 70%;
+
+  flex-direction: column;
+  gap: 1rem;
+}
+.socBox {
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footerSecondBox p{
+  font-size: .8rem;
+}
+
+}
+
+
+
+/*|||||-----------------------------------Mobile------------------------|||||*/
 
 @media only screen and (max-width: 480px) {
   h2 {
     font-size: 2.5rem;
+    margin-top: 4rem;
+    letter-spacing: .1rem;
   }
 
   h3 {
     font-size: 1.5rem;
+    margin-top: 1rem;
   }
 
+  .menuButton{
+    display: flex;
+  }
+
+/*-----------------------Nav----------------*/
+  nav img {
+    width: 100px;
+  }
+
+  .menuButton {
+    width: 5rem;
+    height: 3rem;}
+
+
+/*-----------------------Header----------------*/
+  .banner {
+    height: 18rem;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  /*-----------------------Main----------------*/
+  #theGame{
+    padding: 0;
+  
+  }
+  
+  #theGame p {
+    margin: 1rem 0.5rem 0 0.5rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: start;
+  }
+  #theGame h2{
+    margin-bottom: 0;
+  }
+  #theGame h3{
+    margin: 1rem 0 1rem 0;
+  }
+
+  #theGame ul {
+    padding: 0.5rem;
+  }
+  
+  #theGame ul li {
+    padding: 0.5rem;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+
+  #theGame img {
+    width: 22rem;
+  }
+  .Wtext{
+    padding: 0 ;
+    line-height: 1rem;
+  }
+
+
+  /*------------------------UpdateList---------*/
+  #update{
+    padding-top: 1rem;
+  }
+  #update h2{
+    margin-bottom: 1rem;
+  }
   .container {
     width: 95%;
     margin: 2rem auto 0 auto;
@@ -391,9 +662,61 @@ footer div {
     padding: 8px;
   }
 
-  .kkBook {
-    width: 18rem;
+  .updateTitle {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
   }
+  .updatedate{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+/*-----------------------dowSection--------------*/
+
+  .kkBook {
+    width: 14rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .kkBook {
+    display: block;
+  }
+.bookBox{
+  display: none;
+}
+#dow h2 {
+  margin-bottom: 0rem;
+}
+
+/*---------------------Contact------------------------*/
+
+.messageSection {
+  width: 20rem;
+  height: 25rem;
+  margin: 0 auto 0 auto;
+}
+
+.input-style {
+  margin: 1rem 0 1rem 0;
+  width: 13rem;
+  height: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.massage-style {
+  margin: 1rem 0 1rem 0;
+  width: 18rem;
+  height: 8rem;
+  font-size: 1.2rem;
+}
+.submitButton {
+  width: 6rem;
+  height: auto;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+
+/*---------------------Footer------------------------*/
+
 
   .footerFirstBox {
     display: flex;
@@ -421,4 +744,7 @@ footer div {
   .footerSecondBox p{
     font-size: .8rem;
   }
+
+  
+
 }
